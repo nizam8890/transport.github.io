@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box
+    ;margin: 0;
+    padding: 0;
+}
+.col-1 ,.col-2 ,.col-3 ,.col-4,.col-5,.col-6,.col-7,.col-8 ,.col-9,.col-10,.col-11,.col-12{
+    /* border: 1px solid black; */
+}
+ul, li {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction:row ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.header_list a:hover{
+color: #FF3414;
+transition: 0.5s;
+}
+.button_top a:hover {
+    background: #FF3414;
+    transition: 0.5s;
+    }
+    /* @media screen and (min-width: 1000px) {
+         button{
+            height: 20px;
+            width: 10px;
+        }
+    } */
+header{
+    background:linear-gradient(to top,rgba(0, 0, 0, 0.459) , rgba(0, 0, 0, 0.507))  ,url(./images/banner.png.webp) center center/cover;
+    height: 100vh;
+    width: 100%;
+    background-blend-mode: color-burn;
+    color: blanchedalmond !important;
+}
+.header-logo{
+    height: 5.5rem;
+    border-bottom: 1px solid rgb(189, 189, 189);
+    align-content: center;
+}
+.air{
+    align-content: center;
+    text-align: center;
+    padding-top: 12rem;
+}
+.air h1 {
+    font-size: 3.7rem;
+    font-weight: bold;
+}
+main{
+    height: 70vh;
+    width: 100%;
+}
+.section-1{
+    height: 100vh;
+    width: 100%;
+    background: rgb(240, 248, 255);
+    padding-top: 5rem;
+}
+.section-2{
+    background: linear-gradient(rgba(4, 0, 63, 0.445) ,rgba(0, 39, 71, 0.404)),url(./images/contact_bg.png.webp)center center/cover;
+    height: 62vh;
+    width: 100%;
+    padding-top: 8rem;
+    color: white;
+}
+
+
+.section-3{
+    width: 100%;
+    height: 160vh;
+    padding-top: 7.5rem;
+}
+.yy{
+    color: #FF3414;
+    font-weight: 500;
+    font-size: 46px;
+    margin-bottom: 5px;
+}
+
+.section-4{
+    height: 110vh;
+    width: 100%;
+    background: url(./images/testmonial.png.webp) center center/cover;
+}
+
+.section-5{
+    background: linear-gradient(rgba(0, 29, 56 ,0.9),rgba(0, 29, 56 ,0.9)), url(./images/Estimate_bg.png.webp)center center/cover;
+    height: 90vh;
+    width: 100%;
+    color: white;
+    padding-top: 8rem;
+}
+
+input, textarea ,.section-5 button {
+    width: 100%;
+    height: 50px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #667686;
+    padding: 18px 15px;
+    font-size: 14px;
+    background: transparent;
+    color: #fff;
+    margin-bottom: 15px !important;
+}
+textarea {
+    height: 105px;
+}
+.section-5 .form .boxed-btn3-line {
+    width: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.boxed-btn3-line {
+    color: #FF3414 !important;
+    display: inline-block;
+    padding: 14px 31px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border: 0;
+    border: 1px solid #FF3414;
+    text-align: center;
+    text-transform: capitalize;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+    background: transparent;
+}
+footer{
+    height: 150vh;
+    width: 100%;
+    padding-top: 7rem;
+}
+
+.footer_list{
+    line-height: 50px;
+}
+.footer_list li a{
+text-decoration: none;
+color: gray;
+}
+
+.header_list a{
+    padding-top: 1.3rem;
+margin-left: 1.6rem;
+text-decoration: none;
+color: gray;
+font-size: 0.9rem;
+}
+.top_li a{
+    text-decoration: none;
+color: gray;
+}
+.stick-sec{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+@media screen and (min-width: 600px) {
+    .section-1{
+       height: 200vh;
+       width: 100%;
+   }
+   .count{
+    height: 200vh;
+    width: 100%;
+   }
+}
+@media screen and (min-width: 480px) {
+    .section-1{
+       height: 200vh;
+       width: 100%;
+   }
+   .count{
+    height: 200vh;
+    width: 100%;
+   }
+}
+@media screen and (max-width: 390px){
+    p{
+        font-size: 1rem;
+    }
+    .top-sec{
+        margin-top: 100px;
+    }
+    h1{
+        font-size: 1rem;
+    }
+    .section-1 ,main ,header,.section-2,.section-3,.section-4,.section-5{
+        width: 115%;    
+        text-align: center;
+    }
+    .section-1 ,.section-5{
+        height: 150vh;
+        width: 115%;
+    }
+    header{
+        width: 115%;
+    }
+}
